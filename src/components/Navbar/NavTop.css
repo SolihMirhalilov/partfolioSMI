@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+.Nav-Center{
+    color:white;
+}
+@media(max-width:720px){
+    .Nav-Center{
+        font-size:12px !important;
+    }
+
+}
+.Menu-News{
+    display:none;
+    margin-right:6px;
+}
+.line{
+    width:17px;
+    height:2.3px;
+    background:grey;
+    margin:1.8px
+}
+.NoneDsplNav{
+    display:none;
+}
+
+/* NoneDisplay */
+
+
+
+
+
+@media(max-width:768px){
+
+    .NavDispaly{
+        display:none;
+    }
+    .Menu-News{
+        display:block;
+    }
+
+    .Nav-none-Dspl{
+        background:rgba(57, 57, 57, 0.8);
+        @apply py-8;
+        border-bottom:1.2px solid white;
+        @apply pl-2;
+        color:white;
+        
+    }
+    .NoneNavInput{
+        display:none;
+    }
+    .poisk{
+        display:none;
+    }
+    
+}
+
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.slider-track {
+  animation: scroll 25s linear infinite;
+}

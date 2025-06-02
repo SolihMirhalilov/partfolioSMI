@@ -1,0 +1,39 @@
+@keyframes scroll {
+    0% {transform:translateX(0)}
+    100% {transform:translateX(-50%)}
+}
+.slider-track{
+    animation:scroll 40s linear infinite;
+}
+
+.DisplayalutePC{
+    display:flex;
+}
+
+.DisplayValutePhone{
+    display:none !important;
+}
+.DisplayValutePhone h4{
+    font-size:-50% !important;
+}
+
+.vc img{
+    width:20px !important; 
+}
+@media(max-width:777px){
+    .DisplayalutePC{
+        display:none ;
+    }
+    .DisplayValutePhone {
+        display:block !important;
+        font-size:15px !important;
+        @apply gap-5;
+    }
+    .DisplayValutePhone h4{
+        font-size:14px !important;
+    }
+    .DisplayValutePhone p{
+        font-size:10px !important;
+    }
+
+}
